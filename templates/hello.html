@@ -1,17 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <style>
-        body {background-color: powderblue;}
-        h1 {color: white;}
-    </style>
     <title>Hello From Flask</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" >
 </head>
 <body>
-{% if name %}
-    <h1>Hello {{name}}!</h1>
-{% else %}
-    <h1>Hello, World!</h1>
-{% endif %}
+    <div class="grid-container">
+        <div class="head">
+            <div class="logo">
+                Logo Goes Here
+            </div>
+            <div class="nav">
+                Nav Shit Goes Here
+            </div>
+        </div>
+        <div class="body-1">
+            Body One Shit Goes Here
+        </div>
+        <div class="body-2">
+            Body Two Shot Goes Here
+        </div>
+        <div class="bottom">
+            Bottom Shit Goes Here
+        </div>
+    </div>
 </body>
 </html>
